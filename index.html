@@ -10,25 +10,28 @@
 <body>
     <h1>Welcome to library</h1>
     <div id="library-div"></div>
-    <form>
+    <dialog>
+    <form id="new-book-form">
         <div>
             <div>
                 <label for="title">Title:</label>
-                <input type="text" id="title">
+                <input type="text" id="title" name="title">
             </div>
 
             <div>
                 <label for="author">Author Name:</label>
-                <input type="text" id="author">
+                <input type="text" id="author" name="author">
             </div>
             <div>
                 <label for="pages_number">Number of pages:</label>
-                <input type="number" id="pages_number">
+                <input type="number" id="pages_number" name="pages_number">
             </div>
-            <button>Submit</button>
+            <button id="new-submit">Submit</button>
 
     </div>
     </form>
+    </dialog>
+    <button>New Entry</button>
     <script src = "library.js"></script>
 </body>
 </html>
